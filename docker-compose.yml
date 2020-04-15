@@ -2,7 +2,7 @@ version: '3.2'
 
 services:
   blog:
-    image: jekyll/jekyll
+    image: jekyll/jekyll:3.8.5
     command: ["jekyll", "serve", "--watch"]
     volumes:
       - .:/srv/jekyll
