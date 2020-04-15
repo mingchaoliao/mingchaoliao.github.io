@@ -1,0 +1,11 @@
+version: '3.2'
+
+services:
+  blog:
+    image: jekyll/jekyll
+    command: ["jekyll", "serve", "--watch"]
+    volumes:
+      - .:/srv/jekyll
+      - ./vendor/bundle:/usr/local/bundle
+    ports:
+      - 4000:4000
