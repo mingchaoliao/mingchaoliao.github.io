@@ -258,6 +258,16 @@ Be cautious, editing the object directly is risky since you have no way to rever
 1. modify the yaml file, my-deployment.yaml
 1. re-apply the deployment: `kubectl apply -f my-deployment.yaml`
 
+### Out-Of-Scope Resources/Objects
+
+There are several Kubernetes objects that may not present in the exam. 
+
+> **Warning:** I cannot guarantee that the items listed below will not present in your exam.
+
+ - `ReplicaSet v1 apps`: According to the official documentation, the ReplicaSet is recommended to be replace by the Deployment resource. You (should) not see any question that ask you to create or modify a ReplicaSet.
+ - `Ingress v1beta1 Extensions`: Ingress depends on the underling infrastructure, e.g. AWS, GCP, etc. You (should) not be asked to operate ingress in the exam.
+ - `PersistentVolume v1 core`: PersistentVolume depends on the underline infrastructure. You (should) not be asked to create a PersistentVolume in the exam. However, you will see questions that ask you to create a **PersistentVolumeClaim** which uses some existing volumes.
+
 ### Declarative vs Imperative
 
 In the Kubernetes world, there are 2 ways to operate a object, declarative and imperative. For example, to create a pod using image `busybox`, the imperative way is to run the command `kubectl run my-pod --image busybox`. In contrast, the declarative ways is to create a yaml file, `my-pod.yaml`:
