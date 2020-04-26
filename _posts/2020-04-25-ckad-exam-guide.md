@@ -66,6 +66,17 @@ There are more and more resources coming out on the internet. Here is a list of 
  - [Practice Exam for Certified Kubernetes Application Developer (CKAD) Certification](https://matthewpalmer.net/kubernetes-app-developer/articles/ckad-practice-exam.html)
  - [Kubernetes CKAD Example Exam Questions Practical Challenge Series](https://codeburst.io/kubernetes-ckad-weekly-challenges-overview-and-tips-7282b36a2681)
 
+## Study Path
+
+In order to pass the CKAD exam, you have to understand knowledge from different domains. In high level, it can be concluded as:
+
+ 1. **Linux Command Line Knowledge**: You are asked to complete the exam in a Linux shell. Basic Linux command line knowledge is required to complete the exam.
+ 1. **Software Development Knowledge**: Although you don't need to write even one line of program code during the exam, having basic software development knowledge will help you understand the questions and debug once something goes wrong.
+ 1. **Docker Knowledge**: All Kubernetes resources are ultimately converted to Docker containers and other Docker resources. Having Docker knowledge will help you debug contains and understand the logs.
+ 1. **Kubernetes Knowledge** 
+ 1. **Practice A Lot**
+ 1. **Read Posts & Blog On The Internet**: There are many good posts on the internet. You will see exam experience, tricks, tips and suggestions from people who already pass the exam.
+
 ## My Exam Experience
 
 My exam experience in October 2019 was like:
