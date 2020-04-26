@@ -43,6 +43,32 @@ You are only allowed to open **ONE** extra tab in the browser (beside of the exa
 
 > **Tip:** In order to navigate documentations faster during the exam, you are allowed to **bookmark** as many documentation links as you want prior to the exam, although you can only open one extra tab to access the documentation,
 
+## Preparation Material
+
+There are more and more resources coming out on the internet. Here is a list of them I used in the before.
+
+### Training Courses
+ 
+ - [Kubernetes Certified Application Developer (CKAD) with Tests](https://www.udemy.com/course/certified-kubernetes-application-developer/): I highly recommend this course. It covers all topics and tricks that you need for the exam. You do not need any prior Kubernetes knowledge. But you do need basic Docker and Docker-Compose knowledge before start this course. Also, the course includes a free browser based practicing platform. It is similar to the exam environment (in some degrees). It includes corresponding hands-on practice for each sections in the course, along with several mock exams and challenges. Without previous Kubernetes knowledge (but Docker experience for years), by taking this course, I passed the exam within a month. 
+ - [Docker and Kubernetes: The Complete Guide](https://www.udemy.com/course/docker-and-kubernetes-the-complete-guide/): This course has contains 4 parts: Docker, Docker-Compose, AWS Elastic Beanstalk, and Kubernetes. It covers more than the course above, but is not specific to the CKAD exam. It is useful if you have no container knowledge at all and want to start from the beginning. The instructor will walk though the entire process to build a real-word simple full-stack application (with front-end, back-end, redis cache, database, load-balancing, etc.) and deploy using all 4 different technics.
+ 
+### Blog Posts
+ - [CKAD Exam Guide](https://matthewpalmer.net/kubernetes-app-developer/articles/ckad-exam-guide.html)
+ - [CKAD.md](https://gist.github.com/veggiemonk/70d95df77029b3ebe58637d89ef83b6b)
+ - [Certified Kubernetes Application Developer (CKAD) Exam Tips](https://medium.com/faun/ckad-exam-tips-6e00cc56b6a1)
+ - [How To Pass the Certified Kubernetes Application Developer (CKAD) Exam](https://medium.com/bb-tutorials-and-thoughts/how-to-pass-the-certified-kubernetes-application-developer-ckad-exam-503e9562d022)
+ - [Study Guide: Certified Kubernetes Application Developer (CKAD) Exam](https://www.cloudreach.com/en/resources/blog/study-guide-certified-kubernetes-application-developer-ckad-exam/)
+ - [Certified Kubernetes Exams: Tips and Tricks to Pass the CKA and CKAD Exam](https://dev.to/kodekloud/tips-and-tricks-to-pass-the-cka-and-ckad-exam-c76)
+ - [Certified Kubernetes Application Developer (CKAD) Exam Tips](https://devblogs.microsoft.com/premier-developer/certified-kubernetes-application-developer-ckad-exam-tips/)
+ - [https://unofficialism.info/posts/unofficial-tips-for-cka-and-ckad-exams/](https://unofficialism.info/posts/unofficial-tips-for-cka-and-ckad-exams/)
+
+### Exercises
+
+ - [CKAD Exercises](https://github.com/dgkanatsios/CKAD-exercises)
+ - [Practice Enough With These 150 Questions for the CKAD Exam](https://medium.com/bb-tutorials-and-thoughts/practice-enough-with-these-questions-for-the-ckad-exam-2f42d1228552)
+ - [Practice Exam for Certified Kubernetes Application Developer (CKAD) Certification](https://matthewpalmer.net/kubernetes-app-developer/articles/ckad-practice-exam.html)
+ - [Kubernetes CKAD Example Exam Questions Practical Challenge Series](https://codeburst.io/kubernetes-ckad-weekly-challenges-overview-and-tips-7282b36a2681)
+
 ## My Exam Experience
 
 My exam experience in October 2019 was like:
