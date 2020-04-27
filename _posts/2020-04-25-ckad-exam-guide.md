@@ -75,7 +75,7 @@ The CKAD exam only covers Kubernetes knowledge in a certain level. It is defined
 The following items cover most knowledge points that you may need for the exam:
 
  - API Version: most resource type covered in the exam belongs to `core` group and are currently in the version `v1`. There are several special cases that are listed below.
-   - v1: Pod, Service, ConfigMap, Secret, PersistentVolumeClaim, Namespace, ServiceAccount
+   - v1: Pod, Service, ConfigMap, Secret, PersistentVolumeClaim, Namespace, ServiceAccount, Node
    - apps/v1: Deployment
    - batch/v1: Job
    - batch/v1beta1: CronJob
@@ -83,6 +83,7 @@ The following items cover most knowledge points that you may need for the exam:
  - Object Metadata
    - name: `name` field is required and must be unique within a namespace.
    - labels
+   - annotations: not queryable
    - namespace
  - Resource Type
    - Pod
@@ -173,6 +174,14 @@ The following items cover most knowledge points that you may need for the exam:
        - targetPort
    - ConfigMap
    - Secret: values in the Secret must be base64 encoded: `echo -n "<value>" | base64`
+   - Node
+     - taints
+       - key
+       - value
+       - effect
+         - NoSchedule
+         - PreferNoSchedule
+         - NoExecute
    - PersistentVolumeClaim
      - accessModes
        - ReadWriteOnce
