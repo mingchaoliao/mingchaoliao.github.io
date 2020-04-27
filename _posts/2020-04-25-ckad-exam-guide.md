@@ -20,7 +20,7 @@ To get the certificate, you need to:
  1. Pick an available exam time
  1. take the online exam and get a score of 66% or above.
 
-> **Note:** You do have a change to **re-take** the exam **ONE** time within the year if you does not pass in the first time.
+> **Note:** You do have a chance to **re-take** the exam **ONE** time within the year if you do not pass for the first time.
 
 The exam is:
 
@@ -29,25 +29,25 @@ The exam is:
  - 19 questions (most questions contain multiple sub-questions)
  - proctored (yes, someone will actively watch you via webcam)
  - hands-on questions only.
- - command line environment in the web browser
- - "open-book" (only official documentations are allowed. No google search! No StackOverflow!)
+ - the command-line environment in the web browser
+ - "open-book" (only official documentation are allowed. No google search! No StackOverflow!)
 
-You are only allowed to open **ONE** extra tab in the browser (beside of the exam panel) in order to access **Kubernetes official documentations** at:
+You are only allowed to open **ONE** extra tab in the browser (beside of the exam panel) to access **Kubernetes official documentation** at:
 
  - [https://kubernetes.io/docs/](https://kubernetes.io/docs/) and its subdomains
  - [https://github.com/kubernetes/](https://github.com/kubernetes/) and its subdomains
  - [https://kubernetes.io/blog/](https://kubernetes.io/blog/)
 
-> **Tip:** In order to navigate documentations faster during the exam, you are allowed to **bookmark** as many documentation links as you want prior to the exam, although you can only open one extra tab to access the documentation,
+> **Tip:** To navigate documentation faster during the exam, you are allowed to **bookmark** as many documentation links as you want before the exam, although you can only open one extra tab to access the documentation.
 
 ## Preparation Material
 
-There are more and more resources coming out on the internet. Here is a list of them I used in the before.
+There are more and more resources coming out on the internet. Here is a list of them I used.
 
 ### Training Courses
  
- - [Kubernetes Certified Application Developer (CKAD) with Tests](https://www.udemy.com/course/certified-kubernetes-application-developer/): I highly recommend this course. It covers all topics and tricks that you need for the exam. You do not need any prior Kubernetes knowledge. But you do need basic Docker and Docker-Compose knowledge before start this course. Also, the course includes a free browser based practicing platform. It is similar to the exam environment (in some degrees). It includes corresponding hands-on practice for each sections in the course, along with several mock exams and challenges. Without previous Kubernetes knowledge (but Docker experience for years), by taking this course, I passed the exam within a month. 
- - [Docker and Kubernetes: The Complete Guide](https://www.udemy.com/course/docker-and-kubernetes-the-complete-guide/): This course has contains 4 parts: Docker, Docker-Compose, AWS Elastic Beanstalk, and Kubernetes. It covers more than the course above, but is not specific to the CKAD exam. It is useful if you have no container knowledge at all and want to start from the beginning. The instructor will walk though the entire process to build a real-word simple full-stack application (with front-end, back-end, redis cache, database, load-balancing, etc.) and deploy using all 4 different technics.
+ - [Kubernetes Certified Application Developer (CKAD) with Tests](https://www.udemy.com/course/certified-kubernetes-application-developer/): I highly recommend this course. It covers all topics and tricks that you need for the exam. You do not need any prior Kubernetes knowledge. But you do need basic Docker and Docker-Compose knowledge before starting this course. Also, the course includes a free browser-based practicing platform. It is similar to the exam environment (in some degrees). It includes corresponding hands-on practice for each section in the course, along with several mock exams and challenges. Without previous Kubernetes knowledge (but Docker experience for years), by taking this course, I passed the exam within a month. 
+ - [Docker and Kubernetes: The Complete Guide](https://www.udemy.com/course/docker-and-kubernetes-the-complete-guide/): This course has contains 4 parts: Docker, Docker-Compose, AWS Elastic Beanstalk, and Kubernetes. It covers more than the course above but is not specific to the CKAD exam. It is useful if you have no container knowledge at all and want to start from the beginning. The instructor will walk through the entire process to build a real-word simple full-stack application (with front-end, back-end, Redis cache, database, load-balancing, etc.) and deploy using all 4 different technics.
  
 ### Blog Posts
  - [CKAD Exam Guide](https://matthewpalmer.net/kubernetes-app-developer/articles/ckad-exam-guide.html)
@@ -70,11 +70,11 @@ There are more and more resources coming out on the internet. Here is a list of 
 
 ## Outline of Curriculum
 
-The CKAD exam only covers Kubernetes knowledge in a certain level. It is defined in the [CKAD Exam Curriculum](https://github.com/cncf/curriculum). Do not over-learn!
+The CKAD exam only covers Kubernetes knowledge at a certain level. It is defined in the [CKAD Exam Curriculum](https://github.com/cncf/curriculum). Do not over-learn!
 
 The following items cover most knowledge points that you may need for the exam:
 
- - API Version: most resource type covered in the exam belongs to `core` group and are currently in the version `v1`. There are several special cases that are listed below.
+ - API Version: most resource type covered in the exam belongs to the `core` group and are currently in the version `v1`. Several special cases are listed below.
    - v1: Pod, Service, ConfigMap, Secret, PersistentVolumeClaim, Namespace, ServiceAccount, Node
    - apps/v1: Deployment
    - batch/v1: Job
@@ -207,12 +207,12 @@ My exam experience in October 2019 was like:
 
 20 minutes before the exam:
 
-1. Walk in a empty room with my laptop and a bottle of water (pencil and paper are not allowed).
+1. Walk in an empty room with my laptop and a bottle of water (pencils and paper are not allowed).
 1. Close all opened applications, except the web browser, Chrome.
 1. Run the [compatibility check tool](https://www.examslocal.com/ScheduleExam/Home/CompatibilityCheck) and make sure all items pass, especially webcam and speaker are connected.
 1. Close all other tabs in the Chrome, except the exam panel and a tab for documentation
 
-The exam panel (in the web browser tab) has two major parts. Questions are displayed in the left half of the screen and command line console are in the right half of the screen. There is a tool bar on the top that you can:
+The exam panel (in the web browser tab) has two major parts. Questions are displayed in the left half of the screen and the command-line console is in the right half of the screen. There is a toolbar on the top that you can:
  - open a notepad (a floating panel in the browser)
  - end the exam
  - etc.
@@ -221,17 +221,17 @@ There is also a chat box in the bottom-left corner of the screen that you can us
 
 After the exam begins:
 
-1. The proctor starts to chat with me in the chat box.
+1. The proctor starts to chat with me in the chatbox.
 1. I was asked to hold a government-issued photo ID on hand in front of the webcam for the proctor to ensure my identity.
-1. I was asked to hold the webcam and turn around slowly to check and ensure there is no prohibited items around me.
-1. I was asked to open task manager on my laptop to check and ensure there is no running applications, except the web browser.
+1. I was asked to hold the webcam and turn around slowly to check and ensure there are no prohibited items around me.
+1. I was asked to open the task manager on my laptop to check and ensure there are no running applications, except the web browser.
 
-At anytime during the exam, you can click the "end exam" button in the tool bar to end the exam. Otherwise, the exam will end once the remaining time is over.
+At any time during the exam, you can click the "end the exam" button in the toolbar to end the exam. Otherwise, the exam will end once the remaining time is over.
 
 
 ## Tips & Tricks
 
-Complete all 19 questions in 2 hours in the exam is not a simple task. After reading many posts from other people, they all mention that lacking time is the major reason of failing the exam. Therefore, time management is important for examinees during the exam. Many strategies are introduced in the below to help examinees to save time in the exam.
+Complete all 19 questions in 2 hours in the exam is not a simple task. After reading many posts from other people, they all mention that lacking time is the major reason for failing the exam. Therefore, time management is important for examinees during the exam. Many strategies are introduced in the below to help examinees to save time in the exam.
 
 ### Read Official Resources Carefully
 
@@ -247,25 +247,25 @@ The CNCF provides several resources to help examinees to prepare the exam. Here 
 
 It is very important to run the [compatibility check tool](https://www.examslocal.com/ScheduleExam/Home/CompatibilityCheck) at list a day before the exam on your exam machine (a desktop/laptop of your choice). You will not be allowed to take the exam on the exam day if your computer does not pass the compatibility test.
 
-Especially, you have to prepare a **webcam** and **speaker** and make sure they are proper connected, as they are required during the exam.
+Especially, you have to prepare a **webcam** and **speaker** and make sure they are properly connected, as they are required during the exam.
 
 ### Bookmark Documentation Links That Matches Kubernetes Version Used In The Exam
 
-You are only allowed to open one extra browser tab during the exam to access the official documentations. You can, however, bookmark links from the documentations.
+You are only allowed to open one extra browser tab during the exam to access the official documentation. You can, however, bookmark links from the documentation.
 
 Before you bookmark any page, check the Kubernetes version used in the exam first from the [Official Q & A](https://www.cncf.io/certification/cka/faq/). For example, if the exam (at the time) uses Kubernetes v1.13. Then, you may bookmark [Kubernetes API Reference Doc v1.13](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/), rather than the one for the most current version (e.g. v1.15).
 
 ### Ability to Fast Navigate Inside The Kubernetes API Reference Doc
 
-Although you are allowed to access other official Kubernetes documentation (e.g. blog, github pages, etc.) during the exam, I am highly recommended to open only [Kubernetes API Reference Doc v1.13](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/) (make sure the version matches the one exam used) at all time, unless you have to check other docs. 
+Although you are allowed to access other official Kubernetes documentation (e.g. blog, GitHub pages, etc.) during the exam, I am highly recommended to open only [Kubernetes API Reference Doc v1.13](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/) (make sure the version matches the one exam used) at all time, unless you have to check other docs. 
 
-By navigating in the API Reference Doc, you should get enough information for the exam. If you fell that you have to check other docs frequently when doing mock exams, it means you are not proficient in Kubernetes knowledge (in exam level). In that case, you may not have enough time to complete all questions in the exam time.
+By navigating in the API Reference Doc, you should get enough information for the exam. If you feel that you have to check other docs frequently when doing mock exams, it means you are not proficient in Kubernetes knowledge (at exam level). In that case, you may not be able to complete all questions in the exam time.
 
 With a certain proficiency level of Kubernetes knowledge, An example that you may need to access the API Reference Doc during the exam could be:
  
-> I want to define a container environment variable with a value from a ConfigMap. I remember the yaml configure all the way to the `env` attribute in the container configuration. But I don't quite remember the field name in the next level, whether it's called `from` or `valueFrom` or something else.
+> I want to define a container environment variable with a value from a ConfigMap. I remember the YAML configure to the `env` attribute in the container configuration. But I don't quite remember the syntax in the next level, whether it's called `from` or `valueFrom` or something else.
 
-In the case above, the fastest ways to lookup the field name in that level is to navigate in the API Reference Doc:
+In the case above, the fastest ways to look up the syntax in that level is to navigate in the API Reference Doc:
  1. Navigate to **Pod v1 core** from the panel on the left.
  1. Navigate to **PodSpec**
  1. Navigate to **Container**
@@ -274,12 +274,12 @@ In the case above, the fastest ways to lookup the field name in that level is to
 
 ### Command Line Equivalent Of The API Reference Doc
 
-There is a command line tool which is equivalent to the [Kubernetes API Reference Doc](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/), `kubectl explain <resource>`.
+There is a command-line tool that is equivalent to the [Kubernetes API Reference Doc](https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.13/), `kubectl explain <resource>`.
 
-Consider the example from the previous tip. In order to find the field name in the `env` attribute in the container configuration, it can be achieved by using the command: `kubectl explain pod.spec.containers.env`.
+Consider the example from the previous tip. To find the field name in the `env` attribute in the container configuration, it can be achieved by using the command: `kubectl explain pod.spec.containers.env`.
 
 ### Command Alias (kubectl)
-"kubectl" is not a short command comparing to others, e.g. ls, cmd, etc. In order to save time in the exam, creating an command alias for "kubectl" is recommended.
+"kubectl" is not a short command comparing to others, e.g. ls, cmd, etc. To save time in the exam, creating a command alias for "kubectl" is recommended.
 
 One possible way is to add a line to the end of `.bashrc` file in the home directory:
 ```text
@@ -316,7 +316,7 @@ You can find a full list of resources types in the short name form on the [Kubec
 |cronjobs|cj|
 |networkpolicies|netpol|
 
-In additional to the resource type short names, there are several other option short form that may be helpful. For example (with alias):
+In addition to the resource type short names, there are several other option short forms that may be helpful. For example (with alias):
 
 |Full Command|Short Forms|
 |------------|-----------|
@@ -326,22 +326,22 @@ In additional to the resource type short names, there are several other option s
 
 ### Avoid Ctrl-C/Ctrl-V From The Documentation
 
-The texts from online documentation may contain some invisible characters. Copy them into the yaml file directly may cause unpredictable problems. You may end up with spending a lot of time to resolve the problem in the exams.
+The texts from online documentation may contain some invisible characters. Copy them into the YAML file directly may cause unpredictable problems. You may end up spending a lot of time to resolve the problem in the exams.
 
-The suggestion is that always paste the texts into the notepad first, adjust any indent problems, and then move it to the yaml file in the exam console.
+The suggestion is that always paste the texts into the notepad first, adjust any indent problems, and then move it to the YAML file in the exam console.
 
 ### Create Separated Yaml Files For Each Question
 
-There are total 19 questions in the exam. Each question may contains more than 1 sub-questions. In order to manage solutions for each question, I would suggest to create yaml file for each question/sub-question and name with certain naming convention, e.g. p1.yaml, p2-1.yaml, p2-2.yaml, etc.
+There are a total of 19 questions in the exam. Each question may contain more than 1 sub-questions. To manage solutions for each question, I would suggest creating a YAML file for each question/sub-question and name with the certain naming convention, e.g. p1.yaml, p2-1.yaml, p2-2.yaml, etc.
 
 ### Force Delete Pod Without Waiting
 
-Delete a pod is slow by using command `kubectl delete pod <pod name>`. It may takes up to 10-20 seconds to complete. There is a way to boost the progress that you can use during the exam, `kubectl delete pod my-pod --grace-period=0 --force`. It will instantly complete the command, so that you can continue on issuing other commands, although the pod may not immediately deleted internally.
+Delete a pod is slow by using command `kubectl delete pod <pod name>`. It may take up to 10-20 seconds to complete. There is a way to boost the progress that you can use during the exam, `kubectl delete pod my-pod --grace-period=0 --force`. It will instantly complete the command so that you can continue issuing other commands, although the pod may not immediately be deleted internally.
 
 ### Weight of Questions are different
-Weight of questions are different. Some simple questions may have a high score weight. In contrast, some tough questions may have a low score weight. In order to maximize scores you can earn in the exam, I suggest that you can skip tough questions with low score weight in the first round and complete all sample questions with high score weight first.
+The weight of the questions is different. Some simple questions may have a high weight. In contrast, some tough questions may have a low weight. To maximize scores you can earn in the exam, I suggest that you can skip tough questions with low score weight in the first round and complete all sample questions with high score weight first.
 
-Support there are 5 questions in the exam (although there are actually 19 question in the real exam):
+Support there are 5 questions in the exam (although there are 19 questions in the real exam):
 
 |Question #|Difficulty|Score Weight|
 |----------|----------|------------|
@@ -368,51 +368,53 @@ Round #3:
  1. Complete #2
  
 Always remember, do not spend too many time  in the first round on questions that:
- - you do not have solution in the mind immediately
+ - you do not have a solution in the mind immediately
  - is too long and have many sub-questions
  - is tough and only has a low score weight
 
-Otherwise, you may not has the chance to complete all questions in the exam, and end up with failing the exam.
+Otherwise, you may not have the chance to complete all questions in the exam, and end up failing the exam.
 
 ### Practice A Lot Is The Key To Success
 
 The CAKD exam is a performance-based, on-hand exam. You do not need to memorize theories, features pros/cons, or other texts when preparing the exam. However, you do need to understand how to create/modify/inspect/monitor/delete objects in all domains required in the exam curriculum. 
 
-You can install [minikube](https://kubernetes.io/docs/tasks/tools/install-minikube/) (a single node Kubernetes cluster for non-production usage) and practice on it. 
+You can install [minikube](https://kubernetes.io/docs/tasks/tools/install-minikube/) (a single-node Kubernetes cluster for non-production usage) and practice on it. 
 
-Practice! Practice! Practice a lot! Practice to as fast as you can to operate objects, which is the key to success in the exam.
+Practice! Practice! Practice a lot! Practice until as fast as you can to operate objects, which is the key to success in the exam.
 
-### Be Cautious Of Namespaces, Nodes and Contexts
+### Be Cautious Of Namespaces, Nodes, and Contexts
 
 In the exam, different questions may ask you to operate objects in the different namespaces and nodes. 
 
-First of all, do not worry if you don't know how to switch between nodes and contexts. The question will always provide command for you to switch between them.
+First of all, do not worry if you don't know how to switch between nodes and contexts. The question will always provide commands for you to switch between them.
 
-However, you still need to be cautious of which namespaces, nodes or Contexts that the question asks you to operate objects in. Otherwise, you will have to re-do it in the right environment (if you find out later), or get 0 score (if you do not realize it).
+However, you still need to be cautious of which namespaces, nodes, or contexts that the question asks you to operate objects in. Otherwise, you will have to re-do it in the right environment (if you find out later) or get 0 scores (if you do not realize it).
+
+> **Note:** You can use the command `kubectl config current-context` to get the current context you are in.
 
 ### Always Export Existing Object into Yaml File
 
 In the exam, you may be asked to modify a specified object (e.g. fix a typo in the image name in a deployment). You have the option to edit and re-apply the deployment by using the command: `kubectl edit <resource name>`.
 
-Be cautious, editing the object directly is risky since you have no way to revert back to its original state, if anything goes wrong. I recommend that always export the existing object to a yaml file, modify it and re-apply it:
+Be cautious, editing the object directly is risky since you have no way to revert to its original state if anything goes wrong. I recommend that always export the existing object to a YAML file, modify it, and re-apply it:
 
-1. export to a yaml file: `kubectl get deployment my-deployment -o yaml > my-deployment.yaml`
-1. modify the yaml file, my-deployment.yaml
+1. export to a YAML file: `kubectl get deployment my-deployment -o yaml > my-deployment.yaml`
+1. modify the YAML file, my-deployment.yaml
 1. re-apply the deployment: `kubectl apply -f my-deployment.yaml`
 
 ### Out-Of-Scope Resources/Objects
 
-There are several Kubernetes objects that may not present in the exam. 
+Several Kubernetes objects may not present in the exam. 
 
 > **Warning:** I cannot guarantee that the items listed below will not present in your exam.
 
- - `ReplicaSet v1 apps`: According to the official documentation, the ReplicaSet is recommended to be replace by the Deployment resource. You (should) not see any question that ask you to create or modify a ReplicaSet.
- - `Ingress v1beta1 Extensions`: Ingress depends on the underling infrastructure, e.g. AWS, GCP, etc. You (should) not be asked to operate ingress in the exam.
+ - `ReplicaSet v1 apps`: According to the official documentation, the ReplicaSet is recommended to be replaced by the Deployment resource. You (should) not see any question that asks you to create or modify a ReplicaSet.
+ - `Ingress v1beta1 Extensions`: Ingress depends on the underlying infrastructure, e.g. AWS, GCP, etc. You (should) not be asked to operate ingress in the exam.
  - `PersistentVolume v1 core`: PersistentVolume depends on the underline infrastructure. You (should) not be asked to create a PersistentVolume in the exam. However, you will see questions that ask you to create a **PersistentVolumeClaim** which uses some existing volumes.
 
 ### Declarative vs Imperative
 
-In the Kubernetes world, there are 2 ways to operate a object, declarative and imperative. For example, to create a pod using image `busybox`, the imperative way is to run the command `kubectl run my-pod --image busybox`. In contrast, the declarative ways is to create a yaml file, `my-pod.yaml`:
+In the Kubernetes world, there are 2 ways to operate an object, declarative, and imperative. For example, to create a pod using image `busybox`, the imperative way is to run the command `kubectl run my-pod --image busybox`. In contrast, the declarative way is to create a YAML file, `my-pod.yaml`:
 ```yaml
 apiVersion: v1
 kind: Pod
@@ -425,21 +427,21 @@ spec:
 ```
 and apply it, `kubectl apply -f my-pod.yaml`.
 
-In the example above, it seems like that operating a object in the imperative way is faster than using the declarative way. It is not always true, especially once the requirement becomes more complex. The imperative solution does not give much flexibility compared to its counterpart. With complex requirement, users have to create a pod using the imperative command, export it to a yaml file, modify it, delete the old one and finally apply the one needed.
+In the example above, operating an object in an imperative way is faster than using a declarative way. It is not always true, especially once the requirement becomes more complex. The imperative solution does not give much flexibility compared to its counterpart. With complex requirements, users have to create a pod using the imperative command, export it to a YAML file, modify it, delete the old one, and finally apply the one needed.
 
-In addition, the imperative solutions does not keep any trace and backup of previous states. There is no way to revert back to the state in the before, and even people may not know what they changed in the before once they lose their command line history. 
+Also, the imperative solutions do not keep any trace and backup of previous states. There is no way to revert to the state in the before, and even people may not know what they changed in the before once they lose their command line history. 
 
-In contrast, the declarative solution is more controllable. You can always get what you put in the yaml file. You can also keep a copy of yaml file before you want to change it, so that once the change is not what you want, then you can always re-apply the backup yaml file to revert to the previous state.
+In contrast, the declarative solution is more controllable. You can always get what you put in the YAML file. You can also keep a copy of the YAML file before you want to change it, so that once the change is not what you want, then you can always re-apply the backup YAML file to revert to the previous state.
 
-I saw in many other posts that they does not recommend using declarative solution in the CKAD exam. My opinion is that it depends. **You use whatever you are comfortable with, imperative or declarative**. In the exam I took in October 2019, I used declarative solutions for all cases and still got all question completed in about 1 hour 20 minutes (then I had another 40 minutes for review). 
+I saw in many other posts that they do not recommend using the declarative solution in the CKAD exam. My opinion is that it depends. **You use whatever you are comfortable with, imperative, or declarative**. In the exam I took in October 2019, I used declarative solutions for all cases and still got all questions completed in about 1 hour 20 minutes (then I had another 40 minutes for review). 
 
 ### Auto Indent In The Text Editor
 
-In the CKAD exam, examinees have to create and/or edit many yaml files. A valid yaml file requires strict indent in each levels. To save some time of typing tons of spaces/tabs and to avoid unnecessary indent errors, It is highly recommended to setup auto-indent in the text editor.
+In the CKAD exam, examinees have to create and/or edit many YAML files. A valid YAML file requires strict indent at each level. To save some time of typing tons of spaces/tabs and to avoid unnecessary indent errors, It is highly recommended to setup auto-indent in the text editor.
 
-By default, the exam console provides two text editors, nano and vim (I can't remember whether `emacs` is provided or not). Depend on your own preference, you should memorize the auto-indent configuration prior to the exam and setup the environment as soon as you are allowed to login the exam system.
+By default, the exam console provides two text editors, nano and vim (I can't remember whether `emacs` is provided or not). Depend on your preference, you should memorize the auto-indent configuration before the exam and set up the environment as soon as you are allowed to log in to the exam system.
 
-Here is a example of setup auto-indent in the `nano`. Create or update the file `.bashrc` in the home directory:
+Here is an example of setup auto-indent in the `nano`. Create or update the file `.bashrc` in the home directory:
 
 ```text
 set tabsize 2
@@ -505,7 +507,7 @@ spec:
       args: ["while true; do date; sleep 1;done"]
 ```
 
-A little bit more, what if the question ask to write the output from the while look into a file `/tmp/result.txt`?
+A little bit more, what if the question asks to write the output from the while look into a file `/tmp/result.txt`?
 
 Everything should be the same as the solution above, except the `args` option:
 ```text
@@ -518,7 +520,7 @@ args: ["while true; do date; sleep 1;done > /tmp/result.txt"]
 
 ### How to Set a Multi-line Value in the ConfigMap?
 
-It is actually not a Kubernetes specific trick. It is related to the knowledge of how to set a multi-line value in a Yaml file.
+It is not a Kubernetes specific trick. It is related to the knowledge of how to set a multi-line value in a Yaml file.
 
 Consider the question below:
 > Create a `ConfigMap` with a key `NGINX_CONFIG` and value:
