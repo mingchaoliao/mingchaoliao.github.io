@@ -58,6 +58,8 @@ There are more and more resources coming out on the internet. Here is a list of 
  - [Certified Kubernetes Exams: Tips and Tricks to Pass the CKA and CKAD Exam](https://dev.to/kodekloud/tips-and-tricks-to-pass-the-cka-and-ckad-exam-c76)
  - [Certified Kubernetes Application Developer (CKAD) Exam Tips](https://devblogs.microsoft.com/premier-developer/certified-kubernetes-application-developer-ckad-exam-tips/)
  - [https://unofficialism.info/posts/unofficial-tips-for-cka-and-ckad-exams/](https://unofficialism.info/posts/unofficial-tips-for-cka-and-ckad-exams/)
+ - [CKAD Exam Notes](https://medium.com/@iizotov/exam-notes-ckad-c1c4f9fb9e73)
+ - [My CKAD exam experience](https://www.linkedin.com/pulse/my-ckad-exam-experience-atharva-chauthaiwale/)
 
 ### Exercises
 
@@ -66,16 +68,129 @@ There are more and more resources coming out on the internet. Here is a list of 
  - [Practice Exam for Certified Kubernetes Application Developer (CKAD) Certification](https://matthewpalmer.net/kubernetes-app-developer/articles/ckad-practice-exam.html)
  - [Kubernetes CKAD Example Exam Questions Practical Challenge Series](https://codeburst.io/kubernetes-ckad-weekly-challenges-overview-and-tips-7282b36a2681)
 
-## Study Path
+## Outline of Curriculum
 
-In order to pass the CKAD exam, you have to understand knowledge from different domains. In high level, it can be concluded as:
+The CKAD exam only covers Kubernetes knowledge in a certain level. It is defined in the [CKAD Exam Curriculum](https://github.com/cncf/curriculum). Do not over-learn!
 
- 1. **Linux Command Line Knowledge**: You are asked to complete the exam in a Linux shell. Basic Linux command line knowledge is required to complete the exam.
- 1. **Software Development Knowledge**: Although you don't need to write even one line of program code during the exam, having basic software development knowledge will help you understand the questions and debug once something goes wrong.
- 1. **Docker Knowledge**: All Kubernetes resources are ultimately converted to Docker containers and other Docker resources. Having Docker knowledge will help you debug contains and understand the logs.
- 1. **Kubernetes Knowledge** 
- 1. **Practice A Lot**
- 1. **Read Posts & Blog On The Internet**: There are many good posts on the internet. You will see exam experience, tricks, tips and suggestions from people who already pass the exam.
+The following items cover most knowledge points that you may need for the exam:
+
+ - API Version: most resource type covered in the exam belongs to `core` group and are currently in the version `v1`. There are several special cases that are listed below.
+   - v1: Pod, Service, ConfigMap, Secret, PersistentVolumeClaim, Namespace, ServiceAccount
+   - apps/v1: Deployment
+   - batch/v1: Job
+   - batch/v1beta1: CronJob
+   - networking.k8s.io/v1: NetworkPolicy
+ - Object Metadata
+   - name: `name` field is required and must be unique within a namespace.
+   - labels
+   - namespace
+ - Resource Type
+   - Pod
+     - affinity: nodeAffinity, podAffinity
+       - preferredDuringSchedulingIgnoredDuringExecution
+       - requiredDuringSchedulingIgnoredDuringExecution
+     - containers
+       - args: override Docker images's `CMD`
+       - command: override Docker images's `Entrypoint`
+       - env
+         - name/value
+         - name/valueFrom
+           - configMapKeyRef: pull env from ConfigMap
+           - secretKeyRef: pull env from Secret
+       - envFrom
+         - configMapRef: convert all items from the specified ConfigMap to environment variables
+         - secretRef: convert all items from the specified Secret to environment variables
+       - image
+       - imagePullPolicy
+         - Always (default)
+         - Never
+         - ifNotPresent
+       - probe: livenessProbe, readinessProbe
+         - initialDelaySeconds
+         - periodSeconds
+         - timeoutSeconds
+         - type:
+           - exec: run a command
+           - httpGet: check a http endpoint
+           - tcpSocket: check a tcp socket
+       - ports
+         - containerPort
+         - hostPort
+         - protocol
+       - resources: limits, requests
+         - cpu: e.g. 0.1, 1, 100m, etc.
+         - memory: e.g. 128974848, 129e6, 129M, 123Mi, etc.
+       - securityContext
+         - capabilities: add or drop capabilities. e.g. SYS_ADMIN, AUDIT_CONTROL, etc.
+         - runAsGroup
+         - runAsUser
+       - volumeMounts
+     - restartPolicy
+       - Always
+       - OnFailure
+       - Never
+     - securityContext
+       - runAsGroup: a valid GID
+       - runAsUser: a valid UID
+     - ServiceAccountName
+     - tolerations
+       - key
+       - operator
+         - Exists
+         - Equal
+       - value
+     - volumes
+       - configMap
+       - emptyDir
+       - hostPath
+       - persistentVolumeClaim
+       - secret
+   - Deployment
+     - replicas
+     - selector
+       - matchExpressions
+       - matchLabels
+     - strategy: Recreate or RollingUpdate
+     - Pod Template
+   - Job
+     - activeDeadlineSeconds: job timeout seconds
+     - backoffLimit: number of retries
+     - completions: the desired number of successfully finished pods the job should be run with
+     - parallelism: the maximum desired number of pods the job should run at any given time
+     - selector: matchExpressions or matchLabels
+     - Job Pod Template: restartPolicy in the pod spec should be `Never`.
+   - CronJob
+     - Job Template
+     - schedule
+   - Service
+     - Types
+       - ClusterIP
+       - NodePort
+     - Service Port
+       - nodePort: set only when type=NodePort
+       - protocol: TCP or UDP
+       - port
+       - targetPort
+   - ConfigMap
+   - Secret: values in the Secret must be base64 encoded: `echo -n "<value>" | base64`
+   - PersistentVolumeClaim
+     - accessModes
+       - ReadWriteOnce
+       - ReadOnlyMany
+       - ReadWriteMany
+     - resources: limits, requests
+       - storage: e.g. 8Gi, 128M, etc.
+     - selector: matchExpressions or matchLabels
+     - storageClassName
+   - Namespace
+   - ServiceAccount
+   - NetworkPolicy
+     - policyTypes:
+       - Ingress
+       - Egress
+     - podSelector: matchExpressions or matchLabels
+     - ingress
+     - egress
 
 ## My Exam Experience
 
@@ -199,6 +314,16 @@ In additional to the resource type short names, there are several other option s
 |k get pods --all-namespaces|k get pods -A|
 |k get pods --selector='label1=key1'|k get pods -l label1=key1|
 |k get pod my-pod --output='yaml'|k get pod my-pod -o yaml|
+
+### Avoid Ctrl-C/Ctrl-V From The Documentation
+
+The texts from online documentation may contain some invisible characters. Copy them into the yaml file directly may cause unpredictable problems. You may end up with spending a lot of time to resolve the problem in the exams.
+
+The suggestion is that always paste the texts into the notepad first, adjust any indent problems, and then move it to the yaml file in the exam console.
+
+### Create Separated Yaml Files For Each Question
+
+There are total 19 questions in the exam. Each question may contains more than 1 sub-questions. In order to manage solutions for each question, I would suggest to create yaml file for each question/sub-question and name with certain naming convention, e.g. p1.yaml, p2-1.yaml, p2-2.yaml, etc.
 
 ### Force Delete Pod Without Waiting
 
