@@ -17,3 +17,4 @@ linkedin_username: mingchao-liao-7874188b
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
