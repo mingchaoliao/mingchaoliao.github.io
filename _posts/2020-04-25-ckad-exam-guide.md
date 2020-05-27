@@ -2,6 +2,7 @@
 layout: post
 title: "CKAD Exam Guide"
 date: 2020-04-25 22:12:46 -0500
+toc: true
 description: "In October 2019, I passed the Certified Kubernetes Application Developer (CKAD) exam. In this post, I would like to share some resources and tips to help people to pass the exam."
 ---
 
